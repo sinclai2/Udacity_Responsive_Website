@@ -1,0 +1,159 @@
+/***************************
+		Universal
+***************************/
+
+
+img {
+	width: 100%;
+}
+
+p {
+	font-size: 1.5em;
+}
+
+/***************************
+		overlay
+***************************/
+
+.overlay {
+	position: absolute;
+	top: 0;
+  	left: 0;
+  	right: 0;
+  	left: 0;
+  	height: 100%;
+  	width:100%;
+  	opacity: 0;
+  	transition: .5s ease;
+  	background-color: #000;
+}
+
+.main-img:hover .overlay {
+	opacity: 1;
+}
+
+.text {
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	/*center-text*/
+	transform: translate(-50%, -50%);
+}
+
+/***************************
+		colors
+***************************/
+
+ 
+.blue {
+	color:#02b3e4;
+}
+
+.light-blue {
+	color:#7d97ad;
+}
+
+.dark-blue {
+	color:#2d3c49; 
+}
+
+/***************************
+		Header
+***************************/
+
+.logo {
+	margin-top: 30px;
+	font-family: "Amatic SC", cursive;
+	font-size: 4em;
+}
+
+.name {
+	font-family: "Gruppo", cursive;
+}
+
+hr {
+	margin-top: 0px;
+	background-color: #7d97ad;
+	height: 5px !important;
+}
+
+/***************************
+		Main
+***************************/
+
+
+article a:hover {
+	text-decoration: none;
+}
+
+article {
+	font-family: Helvetica, Arial;
+}
+
+article a {
+	font-size: 1.5em;
+}
+
+.featured-work {
+	margin-left: 15px;
+}
+
+/***************************
+		footer
+***************************/
+
+.footer {
+	padding: 20px 0;
+	margin:10px 0;
+	background-color:#2d3c49; 
+	color:#fff;
+}
+
+.social-media {
+	font-size: 2.5em;
+}
+
+/***************************
+		media queries
+***************************/
+
+
+@media screen and (max-width: 750px){
+
+	.logo {
+		text-align: center;
+	}
+	
+	.name {
+		text-align: center;
+	}
+
+	.main-img {
+		padding: 0px;
+	}
+
+	.text {
+		width: 300px;
+	}
+	
+	.project {
+		padding: 0px;
+	}
+
+	.featured-work {
+		margin-left: 0px;
+		text-align: center;
+	}
+
+	p {
+		font-size: 1.5em;
+		padding: 0 10px;
+	}
+
+	a {
+		font-size: 1.5em;
+		padding: 0 10px;
+	}
+}
+
